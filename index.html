@@ -120,8 +120,9 @@
             </div>
 
             <!-- Mobile Menu Icon -->
-            <button class="md:hidden text-white" title="เมนู" aria-label="เมนู">
-                <i data-feather="menu"></i>
+            <button type="button" class="md:hidden text-white" title="เมนู" aria-label="เมนู">
+                <i data-feather="menu" aria-hidden="true"></i>
+                <span class="sr-only">เมนู</span>
             </button>
         </div>
     </nav>
@@ -180,7 +181,7 @@
                         <h3 class="text-xl font-bold text-wood-dark mb-2">เรือนไม้ชายคา: เอกลักษณ์ที่ยังมีลมหายใจ</h3>
                         <p class="text-gray-600 font-light">
                             บ้านเรือนไม้เก่าแก่ที่เรียงรายขนาบสองฝั่งคลอง คือภาพจำที่งดงามของลาดกระบัง โครงสร้างไม้สักทองที่ผ่านกาลเวลา สะท้อนภูมิปัญญาการปลูกสร้างบ้านริมน้ำที่เน้นความโปร่งสบาย มีชานเรือนยื่นรับลม และหลังคาทรงจั่วที่ระบายน้ำฝนได้ดี เป็นมรดกทางสถาปัตยกรรมที่ชุมชนร่วมใจกันอนุรักษ์ไว้
-                        </p>\
+                        </p>
                     </div>
 
                     <p class="text-gray-600 leading-loose font-thai text-lg text-justify">
@@ -191,8 +192,8 @@
                 <!-- Image Grid -->
                 <div class="md:w-1/2 relative">
                     <div class="grid grid-cols-2 gap-4">
-                        <img src="https://images.unsplash.com/photo-1565060169376-74d39e3f9a74?q=80&w=800" alt="Huatakhe Traditional Architecture Detail" class="rounded-lg shadow-xl w-full h-64 object-cover transform translate-y-8 wood-border">
-                        <img src="https://images.unsplash.com/photo-1596719702224-b152d58546c1?q=80&w=800" alt="Huatakhe Traditional Architecture" class="rounded-lg shadow-xl w-full h-64 object-cover transform -translate-y-8 wood-border">
+                        <img src="https://images.unsplash.com/photo-1565060169376-74d39e3f9a74?q=80&w=800" class="rounded-lg shadow-xl w-full h-64 object-cover transform translate-y-8 wood-border" alt="ภาพเรือนไม้ริมคลองในชุมชนหัวตะเข้" title="เรือนไม้ริมคลอง">
+                        <img src="https://images.unsplash.com/photo-1596719702224-b152d58546c1?q=80&w=800" class="rounded-lg shadow-xl w-full h-64 object-cover transform -translate-y-8 wood-border" alt="ภาพบรรยากาศบ้านเรือนและชุมชนหัวตะเข้" title="ชุมชนหัวตะเข้">
                     </div>
                     <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] border border-gold-primary/30 rounded-full animate-spin-slow"></div>
                 </div>
@@ -207,13 +208,13 @@
             <p class="text-gold-primary mb-10">เรื่องราววิถีชีวิตและวัฒนธรรมผ่านมุมมองใหม่</p>
             
             <div class="relative max-w-4xl mx-auto aspect-video rounded-xl overflow-hidden shadow-2xl border-4 border-gold-primary/30 bg-black">
-                <!-- FIX 1: แก้ไข iframe หลัก ตามคำแนะนำ (ใช้ nocookie, web-share, strict-origin) -->
-                <iframe class="w-full h-full" 
-                        src="https://www.youtube-nocookie.com/embed/TntfD-GpPd4" 
-                        title="Huatakhe Intro" 
+                <!-- UPDATED LINK: ใช้ลิงก์ใหม่ WDtb-QgaUZ0 และปรับเป็น nocookie เพื่อความปลอดภัย -->
+                <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/WDtb-QgaUZ0?si=WNReq9xXATM96Usp&controls=0" 
+                        title="YouTube video player" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                        referrerpolicy="strict-origin-when-cross-origin"
+                        referrerpolicy="strict-origin-when-cross-origin" 
                         allowfullscreen>
                 </iframe>
             </div>
@@ -457,7 +458,8 @@
                             <h3 class="text-3xl font-bold text-wood-dark mb-2">วิธีทำ: ว่าวจุฬา</h3>
                             <p class="text-gray-500 mb-8">ขั้นตอนการขึ้นโครงสร้างที่ต้องอาศัยความสมดุลแม่นยำ</p>
 
-                            ${createVideo('https://www.youtube.com/embed/TntfD-GpPd4', 'การขึ้นโครงว่าวจุฬา')}
+                            <!-- UPDATED LINK IN JS: ใช้ลิงก์ใหม่ -->
+                            ${createVideo('https://www.youtube.com/embed/WDtb-QgaUZ0?si=WNReq9xXATM96Usp&controls=0', 'การขึ้นโครงว่าวจุฬา')}
 
                             <div class="space-y-4">
                                 ${createStep(1, 'เหลาไม้โครงอกและปีก', 'นำไม้ไผ่สีสุกมาเหลาให้กลมกลึง เช็คความสมดุลซ้ายขวา (Balance) ห้ามให้ข้างใดข้างหนึ่งหนักกว่า', 'https://placehold.co/600x400/3E2723/FFF?text=Step+1+Bamboo+Frame')}
@@ -471,7 +473,8 @@
                             <h3 class="text-3xl font-bold text-wood-dark mb-2">วิธีทำ: ว่าวใบไม้</h3>
                             <p class="text-gray-500 mb-8">ว่าวพื้นบ้าน ทำง่าย ใช้วัสดุจากธรรมชาติ</p>
 
-                             ${createVideo('https://www.youtube.com/embed/TntfD-GpPd4', 'การทำว่าวใบไม้')}
+                             <!-- UPDATED LINK IN JS: ใช้ลิงก์ใหม่ -->
+                             ${createVideo('https://www.youtube.com/embed/WDtb-QgaUZ0?si=WNReq9xXATM96Usp&controls=0', 'การทำว่าวใบไม้')}
 
                              <div class="space-y-4">
                                 ${createStep(1, 'ดัดไม้ไผ่เป็นวงรี', 'นำไม้ไผ่ซีกเล็กๆ มาดัดโค้งให้เป็นรูปวงรีคล้ายใบไม้ มัดปลายทั้งสองข้างให้แน่น', 'https://placehold.co/600x400/00695C/FFF?text=Leaf+Kite+Step+1')}
@@ -502,7 +505,8 @@
                             <h3 class="text-3xl font-bold text-wood-dark mb-2">ขั้นตอนการต่อเรือบดจำลอง</h3>
                             <p class="text-gray-500 mb-8">เรียนรู้วิธีการขึ้นรูปเรือไม้สักแบบดั้งเดิม</p>
                             
-                            ${createVideo('https://www.youtube.com/embed/TntfD-GpPd4', 'การต่อเรือจำลอง')}
+                            <!-- UPDATED LINK IN JS: ใช้ลิงก์ใหม่ -->
+                            ${createVideo('https://www.youtube.com/embed/WDtb-QgaUZ0?si=WNReq9xXATM96Usp&controls=0', 'การต่อเรือจำลอง')}
 
                             <div class="space-y-4">
                                 ${createStep(1, 'วางกระดูกงู (Keel)', 'วางไม้เนื้อแข็งเป็นแกนกลาง ยึดกับแท่นฐานให้มั่นคง เปรียบเสมือนกระดูกสันหลังของเรือ', 'https://placehold.co/600x400/5D4037/FFF?text=Keel+Laying')}
